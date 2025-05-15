@@ -1,7 +1,7 @@
 
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Eye, EyeOff, ArrowRight, GitHub, Google } from "lucide-react";
+import { Eye, EyeOff, ArrowRight, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -217,11 +217,26 @@ const Auth = () => {
 
             <div className="grid grid-cols-2 gap-4 mt-4">
               <Button variant="outline" className="h-12">
-                <GitHub size={18} className="mr-2" />
+                <Github size={18} className="mr-2" />
                 GitHub
               </Button>
               <Button variant="outline" className="h-12">
-                <Google size={18} className="mr-2" />
+                <svg
+                  className="mr-2 h-4 w-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <path d="M8 12h8"></path>
+                  <path d="M12 8v8"></path>
+                </svg>
                 Google
               </Button>
             </div>
@@ -260,3 +275,4 @@ const Auth = () => {
 };
 
 export default Auth;
+
